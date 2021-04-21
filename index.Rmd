@@ -1,0 +1,36 @@
+---
+title: "Leaflet Web Page"
+author: "Kyle R"
+date: "4/21/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(leaflet)
+```
+
+```{r, eval = F}
+my_map <- leaflet() %>%
+        addTiles() %>%
+        addMarkers(lat = 48.47592269832985, lng = -81.3337521815351652,
+                   popup = '<a href="https://www.timmins.ca/">Timmins, ON</a>')
+my_map
+```
+
+## Get to know Timmins!
+
+... For no reason at all.
+
+```{r, echo = F}
+my_map <- leaflet() %>%
+        addTiles() %>%
+        addMarkers(lat = 48.47592269832985, lng = -81.3337521815351652,
+                   popup = '<a href="https://www.timmins.ca/">Timmins, ON</a>')
+my_map
+```
+
+### **Have a great day stranger!**
